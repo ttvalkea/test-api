@@ -24,7 +24,7 @@ namespace TestApi.Controllers
                 {
                     new Item()
                     {
-                        Name = "Axe", Damage = rng.Next(5, 20), Defence = 0
+                        Name = "Axe", Damage = rng.Next(35, 50), Defence = 0
                     },
                     new Item()
                     {
