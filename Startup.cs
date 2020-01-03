@@ -30,7 +30,7 @@ namespace TestApi
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {
-                    builder.WithOrigins("http://52.178.143.122/");
+                    builder.WithOrigins("http://tuomas-test-front.azurewebsites.net/");
                 });
             }); 
 
