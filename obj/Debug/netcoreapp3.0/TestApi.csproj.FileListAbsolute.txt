@@ -10,7 +10,6 @@ C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\TestApi.pdb
 C:\git_repos\TestApi\obj\Debug\netcoreapp3.0\TestApi.csprojAssemblyReference.cache
 C:\git_repos\TestApi\obj\Debug\netcoreapp3.0\staticwebassets\TestApi.StaticWebAssets.Manifest.cache
 C:\git_repos\TestApi\obj\Debug\netcoreapp3.0\staticwebassets\TestApi.StaticWebAssets.xml
-C:\git_repos\TestApi\obj\Debug\netcoreapp3.0\TestApi.MvcApplicationPartsAssemblyInfo.cache
 C:\git_repos\TestApi\obj\Debug\netcoreapp3.0\TestApi.AssemblyInfoInputs.cache
 C:\git_repos\TestApi\obj\Debug\netcoreapp3.0\TestApi.AssemblyInfo.cs
 C:\git_repos\TestApi\obj\Debug\netcoreapp3.0\TestApi.RazorTargetAssemblyInfo.cache

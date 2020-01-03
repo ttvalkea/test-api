@@ -25,16 +25,18 @@ namespace TestApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options =>
-            {
-                options.AddPolicy(MyAllowSpecificOrigins,
-                builder =>
-                {
-                    builder.WithOrigins("http://tuomas-test.azurewebsites.net/", "http://tuomas-test-front.azurewebsites.net/")
-                        .AllowAnyHeader()
-                        .AllowAnyMethod();
-                });
-            }); 
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy(MyAllowSpecificOrigins,
+            //    builder =>
+            //    {
+            //        builder.WithOrigins("http://tuomas-test.azurewebsites.net/", "http://tuomas-test-front.azurewebsites.net/")
+            //            .AllowAnyHeader()
+            //            .AllowAnyMethod();
+            //    });
+            //}); 
+
+            services.AddCors();
 
             services.AddControllers();
         }
@@ -47,7 +49,10 @@ namespace TestApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(MyAllowSpecificOrigins);
+            //app.UseCors(MyAllowSpecificOrigins);
+            app.UseCors(
+                options => options.WithOrigins("http://tuomas-test-front.azurewebsites.net").AllowAnyMethod()
+            );
 
             app.UseHttpsRedirection();
 
