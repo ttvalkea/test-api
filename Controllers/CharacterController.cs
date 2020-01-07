@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace TestApi.Controllers
 {
@@ -15,11 +13,16 @@ namespace TestApi.Controllers
         public Character Get()
         {
             var rng = new Random();
-            
+            var heroes = new List<Database.Hero>();
+            using (var db = new Database.DatabaseContext())
+            {
+                heroes = db.Hero.ToList();
+            }
+            var highestLevelHero = heroes.OrderByDescending(x => x.Level).First();
             return new Character()
             {
-                Name = "Conan",
-                Level = rng.Next(1, 10),
+                Name = highestLevelHero.Name,
+                Level = highestLevelHero.Level,
                 Gear = new List<Item>()
                 {
                     new Item()
