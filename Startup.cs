@@ -11,8 +11,8 @@ namespace TestApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            Secrets.DbUserName = Configuration["dbUserName"];
-            Secrets.DbUserPassword = Configuration["dbUserPassword"];
+            //Secrets.DbUserName = Configuration["dbUserName"];
+            //Secrets.DbUserPassword = Configuration["dbUserPassword"];
         }
         public IConfiguration Configuration { get; }
 

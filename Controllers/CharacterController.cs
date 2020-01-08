@@ -14,15 +14,15 @@ namespace TestApi.Controllers
         {
             var rng = new Random();
             var heroes = new List<Hero>();
-            using (var db = new DatabaseContext())
-            {
-                heroes = db.Hero.ToList();
-            }
-            var highestLevelHero = heroes.OrderByDescending(x => x.Level).First();
+            //using (var db = new DatabaseContext())
+            //{
+            //    heroes = db.Hero.ToList();
+            //}
+            //var highestLevelHero = heroes.OrderByDescending(x => x.Level).First();
             return new Character()
             {
-                Name = highestLevelHero.Name,
-                Level = highestLevelHero.Level,
+                Name = "Sankari",//highestLevelHero.Name,
+                Level = 5,//highestLevelHero.Level,
                 Gear = new List<Item>()
                 {
                     new Item()
