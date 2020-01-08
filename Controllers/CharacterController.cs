@@ -13,8 +13,8 @@ namespace TestApi.Controllers
         public Character Get()
         {
             var rng = new Random();
-            var heroes = new List<Database.Hero>();
-            using (var db = new Database.DatabaseContext())
+            var heroes = new List<Hero>();
+            using (var db = new DatabaseContext())
             {
                 heroes = db.Hero.ToList();
             }

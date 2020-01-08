@@ -50,4 +50,17 @@ C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
 C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Azure.KeyVault.Core.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Rest.ClientRuntime.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Azure.KeyVault.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Azure.KeyVault.WebKey.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.AzureKeyVault.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\git_repos\TestApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\git_repos\TestApi\obj\Debug\netcoreapp3.0\TestApi.MvcApplicationPartsAssemblyInfo.cache
