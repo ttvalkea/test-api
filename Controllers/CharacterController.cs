@@ -21,7 +21,7 @@ namespace TestApi.Controllers
             //var highestLevelHero = heroes.OrderByDescending(x => x.Level).First();
             return new Character()
             {
-                Name = "Sankari",//highestLevelHero.Name,
+                Name = "Sankari2",//highestLevelHero.Name,
                 Level = 5,//highestLevelHero.Level,
                 Gear = new List<Item>()
                 {
