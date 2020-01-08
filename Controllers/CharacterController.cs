@@ -16,17 +16,18 @@ namespace TestApi.Controllers
         public async Task<Character> Get()
         {
             var rng = new Random();
+            var dbUserName = await GetKey("dbUserName");
+            var dbUserPassword = await GetKey("dbUserPassword");
             var heroes = new List<Hero>();
-            //using (var db = new DatabaseContext())
-            //{
-            //    heroes = db.Hero.ToList();
-            //}
-            //var highestLevelHero = heroes.OrderByDescending(x => x.Level).First();
-            var name = await GetKey("dbUserName");
+            using (var db = new DatabaseContext(dbUserName, dbUserPassword))
+            {
+                heroes = db.Hero.ToList();
+            }
+            var highestLevelHero = heroes.OrderByDescending(x => x.Level).First();
             return new Character()
             {
-                Name = name,//highestLevelHero.Name,
-                Level = 5,//highestLevelHero.Level,
+                Name = highestLevelHero.Name,
+                Level = highestLevelHero.Level,
                 Gear = new List<Item>()
                 {
                     new Item()
@@ -41,6 +42,7 @@ namespace TestApi.Controllers
             };
         }
 
+        //TODO: Getting the db credentials should be done somewhere else, refactor this.
         private async Task<string> GetKey(string name)
         {
             try
@@ -72,7 +74,7 @@ namespace TestApi.Controllers
             }
             catch (Exception exception)
             {
-                return "GetKey error with name parameter: " + name + " --- " + exception.ToString();
+                throw exception;
             }
             
         }
