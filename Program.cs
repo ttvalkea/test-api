@@ -18,15 +18,15 @@ namespace TestApi
             Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) =>
                 {
-                    var keyVaultEndpoint = "https://tuomaskeyvault.vault.azure.net";
-                    if (!string.IsNullOrEmpty(keyVaultEndpoint))
-                    {
-                        var azureServiceTokenProvider = new AzureServiceTokenProvider();
-                        var keyVaultClient = new KeyVaultClient(
-                            new KeyVaultClient.AuthenticationCallback(
-                                azureServiceTokenProvider.KeyVaultTokenCallback));
-                        config.AddAzureKeyVault(keyVaultEndpoint, keyVaultClient, new DefaultKeyVaultSecretManager());
-                    }
+                    //var keyVaultEndpoint = "https://tuomaskeyvault.vault.azure.net";
+                    //if (!string.IsNullOrEmpty(keyVaultEndpoint))
+                    //{
+                    //    var azureServiceTokenProvider = new AzureServiceTokenProvider();
+                    //    var keyVaultClient = new KeyVaultClient(
+                    //        new KeyVaultClient.AuthenticationCallback(
+                    //            azureServiceTokenProvider.KeyVaultTokenCallback));
+                    //    config.AddAzureKeyVault(keyVaultEndpoint, keyVaultClient, new DefaultKeyVaultSecretManager());
+                    //}
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
